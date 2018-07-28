@@ -20,6 +20,12 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+
+    externalNativeBuild {
+        ndkBuild {
+            path "jni/Android.mk"
+        }
+    }
 }
 
 dependencies {

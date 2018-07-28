@@ -35,6 +35,13 @@ android {
             }
         }
     }
+
+
+    externalNativeBuild {
+        ndkBuild {
+            path "jni/Android.mk"
+        }
+    }
 }
 
 dependencies {
