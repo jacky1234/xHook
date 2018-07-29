@@ -2,8 +2,8 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE            := xhook
-LOCAL_SRC_FILES         := $(LOCAL_PATH)/../../libxhook/libs/$(TARGET_ARCH_ABI)/libxhook.so
-LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../../libxhook/jni
+LOCAL_SRC_FILES         := $(LOCAL_PATH)/../../../libxhook/libs/$(TARGET_ARCH_ABI)/libxhook.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../../../libxhook/jni
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
